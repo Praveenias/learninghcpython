@@ -1,0 +1,8 @@
+example
+venv
+/public/*
+
+test.json
+test.py
+compared.xlsx
+missing.xlsx

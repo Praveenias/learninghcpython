@@ -1,0 +1,21 @@
+Pyinstaller:
+
+For windows:
+pyinstaller --add-data atom_templates.json;. praveen.py --onefile --name AtomHelper --icon=logo.png
+
+For Linux:
+pyinstaller --add-data atom_templates.json:. praveen.py --onefile
+	 --name AtomHelper --icon=logo.png
+
+This command should be used in the same directory or we need to make correct file path
+
+--onefile will single create .exe file in the dist folder
+	(otherwise it will be created as folder)
+
+--name is name of the executable file
+
+--icon is the icon for executable file
+	(we have used ilensys logo which is in same directory)
+
+--add-data will add the support file needed for program
+	(in our case atom_templates.json)

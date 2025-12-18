@@ -1,0 +1,87 @@
+{
+  "file":[
+		{
+      "file_type":"manufacturer",
+      "file_path":"",
+      "header_row":2,
+      "sheet_name":""
+    },
+    {
+			"file_type":"master",
+			"file_path":".",
+			"header_row":2,
+      "sheet_name":"Data"
+		},
+    {
+			"file_type":"bom",
+      "file_path":"./example/set-1/BOM_1.xlsx",
+      "header_row":2,
+      "sheet_name":"Data",
+      "bom_master":
+      {
+        "subscriber_id":2,
+        "product_id":1,
+        "bom_name":"bom1",
+        "revision":"1",
+        "eau":500,
+        "status":"dbAdmin_pending",
+        "author_id":null,
+        "approver_id":5
+      }
+      
+		}
+	],
+  "clear_table" :["master","manufacturer","compliance_result","bom_master","bom"],
+  "db_schema":{
+    "manufacturer":{
+      "mandatory_column" :["name","category","alert_mechanism"],
+      "optional_columns":[],
+      "non_templete_columns":["normalized_name"]
+    },
+    "master":{
+      "mandatory_column" : ["manufacturer_name","manufacturer_part_number",
+                      "part_category","component_type","part_type","part_lifecycle_status"],
+      "optional_columns" :["manufacturer_part_description","stock_details", "lead_time","price" ,"component_classification",
+                        "assembly_type","power_type","regulatory_test", "year_to_eol", "check_date_regulatory",
+                    "check_date_lifecycle" , "check_date_stock" , "check_date_compliance" , "ltb_possibility" ,"remark",
+                    "rohs3","reach","rohs3_comment","rohs3_exemption_date"],
+      "non_templete_columns" :["stock_details","lead_time_details","status"],
+      "map_excel_2_db":{
+        "manufacturer_part_description" :"manufacturer_description",
+        "part_lifecycle_status" : "part_status",
+        "manufacturer_part_number":"manufacturer_partnumber",
+        "stock_details" : "stock_position",
+        "lead_time":"supply_lead_time",
+        "check_date_lifecycle":"check_date_life_cycle",
+        "remark":"remarks"
+      },
+      "compliant_result_column_in_ex":["rohs3","reach","rohs3_comment","rohs3_exemption_date"]
+    },
+    "bom":{
+      "mandatory_column" : ["customer_part_number","manufacturer_name","manufacturer_part_number",
+                            "proactive_analysis"],
+      "optional_columns" : ["customer_part_number_description","quantity","critical_component",
+                          "supplier_internal_partnumber","supplier_partnumber","supplier_manufacturer","supplier_lead_time",
+                          "supplier_stock","supplier_monthly_usage","supplier_cover_months","supplier_cover_date",
+                        "check_date_life_cycle","check_date_stock","ltb_possibility","remark"],
+      "map_excel_2_db":{
+        "customer_part_number":"subscriber_part_number",
+        "customer_part_number_description":"description",
+        "quantity":"Qty",
+        "critical_component": "Critical",
+        "manufacturer_part_number":"manufacturer_partnumber",
+        "supplier_partnumber":"supplier_part_number",
+        "supplier_internal_partnumber":"supplier_internal_part_number",
+        "remark":"remarks"
+      }
+    }
+  },
+  "db_config":{
+    "host":"localhost",
+    "port":"3306",
+    "db_name":"",
+    "username":"root",
+    "password":""
+  },
+  "auth_key":""
+}

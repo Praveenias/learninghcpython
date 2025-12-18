@@ -1,0 +1,43 @@
+1. why python ?
+#open-source
+#supports vast pakages
+#easy to code
+# automation and scriptings
+# we development, ml,dl,ai,testing
+#efficient, fast and reliable
+#iot technologies
+
+
+#interpreter
+human readable code to machine launguage
+# line by line execution of code
+  
+
+#datatypes
+
+#integer
+#float
+#string
+#boolean(True or False)
+
+file_name.py
+
+input() ->string
+print()
+
+
+int()
+str()
+float()
+bool()
+
+
+a = input()
+b = input()
+a = int(a)
+b = int(b)
+c = a+b
+print(c)
+
+
+[10,12,8,4,5,2]=>8,4,2

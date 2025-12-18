@@ -1,0 +1,112 @@
+{% extends 'api.html' %}
+
+
+{% block api_info %}
+
+<div class="card">
+  <div class="card-header">
+      Filter By
+  </div>
+  <form method="POST" action="{{url_for('bom_status')}}">
+  <div class="card-body">
+      <div class="row mb-2">  
+          <input class="form-control" id="revision" name="revision" value="{{query_info['revision']}}" readonly type="hidden">
+          <div class="col">
+            <label class="form-label">Request Type</label>
+            <select class="form-select" aria-label="Default select example" name="requestType">
+              {%for data in query_info['requestType']%}
+                <option value={{data}}>{{data.replace("_"," ")}}</option>
+              {%endfor%}
+            </select>
+          </div>
+          <div class="col">
+            <label class="form-label">Regulation Type</label>
+            <select class="form-select" aria-label="Default select example" name="regulationType">
+              {%for data in query_info['regulationType']%}
+                <option value={{data}}>{{data}}</option>
+              {%endfor%}
+            </select>
+          </div>
+          <div class="col">
+            <label class="form-label">Return Type</label>
+            <select class="form-select" aria-label="Default select example" name="returnType">
+              {%for data in query_info['returnType']%}
+                <option value={{data}}>{{data.replace("_"," ")}}</option>
+              {%endfor%}
+            </select>
+          </div>
+      </div>
+      <input type="hidden" name="bom_id" value = "{{ query_info['bomId'] }}" /> 
+      <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" /> 
+      {% if query_info['revision'] %}
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked name="isbom">
+      {% else %}
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="isbom">
+      {% endif %}
+      
+      
+  </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 pt-0">
+          <button class="btn btn-primary me-md-2" type="submit">Search</button>
+          <a class="btn btn-success" href="{{ url_for('boms')}}">Back</a>
+      </div>
+
+  </form>
+</div>
+<section>
+  {% if summary_data|length > 0 %}
+    <h3>summary data</h3>
+    <div class="row justify-content-md-center">
+      <table class="table" style="width: 15rem">
+        <tr>
+          <th>Status</th>
+          <th>Value</th>
+        </tr>
+        {% for data,value in summary_data.items() %}
+        <tr>
+          <td>{{data}}</td>
+          <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% endif %}
+  {% if list_data|length > 0 %}
+    <h3>List data</h3>
+    <div class="row justify-content-md-center">
+      {% for data,value in list_data.items() %} 
+      <div class="card mb-2">
+        <div class="card-header">
+          <b>{{data}}</b>
+        </div>
+        <div class="card-body">
+          {% if value|length > 0 %}
+          <table class="table">
+            <tr>
+              {% for h_data in value[0].keys() %} 
+                <th>{{h_data}}</th>   
+              {% endfor %}
+            </tr>
+            
+              {% for child_row in value %} 
+              <tr>
+                {% for tr_data in child_row.values() %} 
+                <td>{{tr_data}}</td>  
+                {%endfor%} 
+              </tr>
+              {% endfor %}
+             
+           
+          </table>
+          {% endif %}
+        </div>
+        
+      </div>   
+      
+       
+      
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+{% endblock %}

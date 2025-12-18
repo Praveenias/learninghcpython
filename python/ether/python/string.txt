@@ -1,0 +1,28 @@
+str = "abcdef fgf dd"
+str.casefold() => "abcdef"
+str.upper() => "ABCDEF"
+str.lower() => "abcdef"
+str.capitalize() =>"Abcdef"
+str.title() => "Abcdef Fgf Dd"
+str.count("a") =>1
+str.startswith("a") =>True
+str.endswith("d") =>True
+str.swapcase() => "ABCDEF"
+str.strip()   => removes first and last space
+reversed("abc") =>"cba"
+"".join(['1','2','3','4']) => "1234"
+str.replace("a","g") =>"gbcdef"
+str.split() => ["abcdef","fgf","dd"]
+str.isalnum() =>True
+str.islower() =>True
+str.isupper()  =>False
+str.isalpha() =>True
+str.isnumeric() =>False (1/2,**2 it will be true)
+str.istitle() =>False
+str.isdigit() =>True ()
+
+
+
+
+
+

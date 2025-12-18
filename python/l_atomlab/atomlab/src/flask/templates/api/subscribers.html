@@ -1,0 +1,81 @@
+{% extends 'api.html' %}
+
+
+{% block api_info %}
+<h3>Subscribers</h3>
+
+<div class="card">
+    <div class="card-header">
+        Filter By
+    </div>
+    <form method="POST" action="{{url_for('subscribers')}}">
+    <div class="card-body">
+        <div class="row mb-2">
+            <div class="col">
+                <label for="exampleDataList" class="form-label">Company Name</label>
+                <input class="form-control" list="companynamelist" id="exampleDataList" name="companyName" placeholder="Type to search...">
+                <datalist id="companynamelist">
+                    {%for data in query_info["u_company_name"]%}
+                        <option value="{{data}}">
+                    {%endfor%}
+                </datalist>
+            </div>
+            <div class="col">
+                <label for="exampleDataList" class="form-label">Site Name</label>
+                <input class="form-control" list="sitenamelist" id="exampleDataList" name="siteName" placeholder="Type to search...">
+                <datalist id="sitenamelist" class="hovercoloring">
+                    {%for data in query_info["u_site_name"]%}
+                    <option value="{{data}}">
+                {%endfor%}
+                </datalist>
+            </div>
+            <div class="col">
+                <label for="exampleDataList" class="form-label">Division Name</label>
+                <input class="form-control" list="divisionnamelist" id="exampleDataList" name="divisionName" placeholder="Type to search...">
+                <datalist id="divisionnamelist">
+                    {%for data in query_info["u_division_name"]%}
+                    <option value="{{data}}">
+                    {%endfor%}
+                </datalist>
+            </div>
+        </div>
+        <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" /> 
+        
+        
+    </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 pt-0">
+            <button class="btn btn-primary me-md-2" type="submit">Search</button>
+            <a class="btn btn-success" href="{{ url_for('subscribers')}}">Reset</a>
+        </div>
+
+    </form>
+</div>
+
+<table class="table table-striped table-hover mt-5">
+    <thead>
+        <tr>
+            {%for column in columns%}
+            <th scope="col"> {{column}}</th>
+            {%endfor%}
+        </tr>
+    </thead>
+    <tbody>
+        {%for col_data in data%}
+        <tr>
+            <td>{{ col_data.companyName}}</td>
+            <td>{{ col_data.siteName}}</td>
+            <td>{{ col_data.divisionName}}</td>
+            <td>{{ col_data.primaryContact}}</td>
+            <td>{{ col_data.primaryEmail}}</td>
+            <td>{{ col_data.phone}}</td>
+            <td>{{ col_data.status}}</td>
+            <td><a class="btn btn-primary" href="{{ url_for('bom_status',bom_id=col_data.subscriberId)}}">Status</a></td>
+        </tr>
+        {%endfor%}
+
+    </tbody>
+</table>
+
+
+
+{% endblock %}

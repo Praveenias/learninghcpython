@@ -1,0 +1,35 @@
+{
+  "v2filePath":"public/malvern_panalytical_v2.xlsx",
+  "v3filePath":"public/malvern_panalytical_v3.xlsx",
+  "rowLimit":0,
+  "uniqueFds":[
+    "Product Name",
+    "BOM Name",
+    "BOM Revision",
+    "Internal Part Number",
+    "Manufacturer Name",
+    "Manufacturer Part Number"
+  ],
+  "ComparisionFds":[
+    "Contract Manufacturer Name & Site",
+    "BOM Category",
+    "IPN Risk Type",
+    "IPN Risk",
+    "BOM EAU",
+    "Proactive Analysis",
+    "IPN Quantity",
+    "Component EAU",
+    "Life Cycle",
+    "Rollup_EAU",
+    "Life Cycle",
+    "Power Type",
+    "Immediate Action",
+    "Coverage Date Based on Market Availability",
+    "IPN Time Till LTB (Months)",
+    "IPN EOL Since (Months)",
+    "IPN LTB / EOL Date",
+    "Year to EOL",
+    "Cover Date Based on Supplier Input",
+    "Supplier Info Received Date"
+  ]
+}

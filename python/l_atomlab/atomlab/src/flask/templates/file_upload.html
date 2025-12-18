@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}ATOM-API{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-2">
+          <div class="list-group ">
+              <a href="{{ url_for('auth_info') }}" class="list-group-item list-group-item-action">
+                  Manufacturer
+              </a>
+              <a href="{{ url_for('subscribers') }}" class="list-group-item list-group-item-action">Master</a>
+              <a href="{{ url_for('licenses') }}" class="list-group-item list-group-item-action">Bom</a>
+              <a href="{{ url_for('products') }}" class="list-group-item list-group-item-action">Replacement </a>
+              
+              
+          </div>
+      </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          
+          {% block upload_file %}{% endblock %}
+
+      </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+npx tailwindcss init
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+"built-css":"tailwindcss build resources/css/app.css -o public/styles.css"
+
+
+php artisan livewire:publish --config
+
+php artisan view:clear
+
+
+ php artisan livewire:form UserForm
+
+<livewire:counter/>
+        <livewire:COntactForm/>
+        <div class="bg-blue-500 text-yellow-100 p-4">
+            This is a Tailwind CSS element.
+        </div> 
+
+
+https://github.com/mediconesystems/livewire-datatables
+
+it supports only laravel 9
+
+https://github.com/rappasoft/laravel-livewire-tables
+
+it doesnt support livewire3
+
+https://github.com/Power-Components/livewire-powergrid
+
+common : we need alphine js for all 3 

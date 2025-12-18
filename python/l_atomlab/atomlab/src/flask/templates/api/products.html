@@ -1,0 +1,72 @@
+{% extends 'api.html' %}
+
+
+
+{% block api_info %}
+<h3>Products</h3>
+
+<div class="card">
+    <div class="card-header">
+        Filter By
+    </div>
+    <form method="POST" action="{{url_for('products')}}">
+    <div class="card-body">
+        <div class="row mb-2">
+            <!-- <div class="col">
+                <label for="exampleDataList" class="form-label">Subscriber Name</label>
+                <input class="form-control" list="subnamelist" id="exampleDataList" name="companyName" placeholder="Type to search...">
+                <datalist id="subnamelist">
+                    {%for data in query_info["u_company_name"]%}
+                        <option value="{{data}}">
+                    {%endfor%}
+                </datalist>
+            </div> -->
+            <div class="col">
+                <label for="exampleDataList" class="form-label">Product Name</label>
+                <input class="form-control" list="pnamelist" id="exampleDataList" name="productName" placeholder="Type to search...">
+                <datalist id="pnamelist">
+                    {%for data in query_info["u_product_name"]%}
+                    <option value="{{data}}">
+                {%endfor%}
+                </datalist>
+            </div>
+        </div>
+        <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" /> 
+        
+    </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 pt-0">
+            <button class="btn btn-primary me-md-2" type="submit">Search</button>
+            <a class="btn btn-success" href="{{ url_for('products')}}">Reset</a>
+        </div>
+
+    </form>
+</div>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            {%for column in columns%}
+            <th scope="col"> {{column}}</th>
+            {%endfor%}
+        </tr>
+    </thead>
+    <tbody>
+        {%for col_data in data%}
+        <tr>
+            <td>{{ col_data.companyName}}</td>
+            <td>{{ col_data.siteName}}</td>
+            <td>{{ col_data.divisionName}}</td>
+            <td>{{ col_data.productName}}</td>
+            <td>{{ col_data.modelName}}</td>
+            <td>{{ col_data.location}}</td>
+            <td>{{ col_data.productType}}</td>
+            <td>{{ col_data.categoryName}}</td>
+            <td>{{ col_data.effectiveDate}}</td> 
+        </tr>
+        {%endfor%}
+
+    </tbody>
+</table>
+
+
+
+{% endblock %}

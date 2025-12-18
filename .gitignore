@@ -2,5 +2,6 @@ venv/
 superset-venv/
 sme/
 docs/
+vendor/
 __pycache__
 build/

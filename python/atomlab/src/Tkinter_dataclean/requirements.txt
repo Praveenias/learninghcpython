@@ -1,0 +1,13 @@
+altgraph==0.17.3
+decorator==5.1.1
+et-xmlfile==1.1.0
+future==0.18.2
+mysql-connector-python==8.0.31
+openpyxl==3.0.10
+pefile==2022.5.30
+Pillow==9.4.0
+protobuf==3.20.1
+pyinstaller==5.7.0
+pyinstaller-hooks-contrib==2022.14
+pywin32-ctypes==0.2.0
+validators==0.20.0

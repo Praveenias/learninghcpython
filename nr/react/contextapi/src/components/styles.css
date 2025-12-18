@@ -1,0 +1,13 @@
+.nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+
+.head{
+  text-align: center;
+  display: block;
+  font-size: 30px;
+}

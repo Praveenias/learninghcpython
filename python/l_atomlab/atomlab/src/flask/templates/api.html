@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1 class="bg-info" style="padding: 0%; margin-bottom: 0%;">{% block title %}<big>ATOM-API</big>{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col" style="padding: 0%;">
+            <div class="list-group" ">
+                <a href="{{ url_for('auth_info') }}" class="list-group-item list-group-item-action" >
+                    Authorization
+                </a>
+                <a href="{{ url_for('subscribers') }}" class="list-group-item list-group-item-action" >Subcribers</a>
+                <a href="{{ url_for('licenses') }}" class="list-group-item list-group-item-action">License</a>
+                <a href="{{ url_for('products') }}" class="list-group-item list-group-item-action">Products</a>
+                
+                <a href="{{ url_for('boms') }}" class="list-group-item list-group-item-action">Boms</a>
+                <a href="{{ url_for('regulation') }}" class="list-group-item list-group-item-action">Regulation</a>
+                <a href="{{ url_for('subtances') }}" class="list-group-item list-group-item-action">Subtances</a>
+                <a href="{{ url_for('manufacturer') }}" class="list-group-item list-group-item-action">Manufacturer</a>
+                <a href="/api/ui" class="list-group-item list-group-item-action" target="_blank">Swagger UI</a>
+                
+            </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main mt-4">
+            
+            {% block api_info %}{% endblock %}
+
+        </div>
+    </div>
+</div>
+<style>
+    .list-group-item 
+    {
+        background-color:#c4bdbd;
+    }
+</style>
+{% endblock %}
+

@@ -1,0 +1,64 @@
+{% extends 'api.html' %}
+
+
+{% block api_info %}
+<h3>Boms</h3>
+
+<div class="card">
+    <div class="card-header">
+        Filter By
+    </div>
+    <form method="POST" action="{{url_for('boms')}}">
+    <div class="card-body">
+        <div class="row mb-2">
+            <div class="col">
+                <label for="exampleDataList" class="form-label">Bom Name</label>
+                <input class="form-control" list="bomnamelist" id="exampleDataList" name="bomName" placeholder="Type to search...">
+                <datalist id="bomnamelist">
+                    {%for data in query_info["u_bom_name"]%}
+                        <option value="{{data}}">
+                    {%endfor%}
+                </datalist>
+            </div>
+        </div>
+        <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" /> 
+        
+    </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 pt-0">
+            <button class="btn btn-primary me-md-2" type="submit">Search</button>
+            <a class="btn btn-success" href="{{ url_for('boms')}}">Reset</a>
+        </div>
+
+    </form>
+</div>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            {%for column in columns%}
+            <th scope="col"> {{column}}</th>
+            {%endfor%}
+        </tr>
+    </thead>
+    <tbody>
+        {%for col_data in data%}
+        <tr>
+            <td>{{ col_data.companyName}}</td>
+            <td>{{ col_data.siteName}}</td>
+            <td>{{ col_data.divisionName}}</td>
+            <td>{{ col_data.bomName}}</td>
+            <td>{{ col_data.productName}}</td>
+            <td>{{ col_data.modelName}}</td>
+            <td>{{ col_data.location}}</td>
+            <td>{{ col_data.revision}}</td>
+            <td>{{ col_data.status}}</td>
+            <td style="display:none;">{{ col_data.bomId}}</td>
+            <td><a class="btn btn-primary" href="{{ url_for('bom_status',bom_id=col_data.bomId,rev=col_data.revision)}}">Status</a></td>
+        </tr>
+        {%endfor%}
+
+    </tbody>
+</table>
+
+
+
+{% endblock %}

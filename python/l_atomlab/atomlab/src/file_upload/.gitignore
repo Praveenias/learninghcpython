@@ -1,0 +1,6 @@
+example
+venv
+/public/*
+
+test.json
+test.py

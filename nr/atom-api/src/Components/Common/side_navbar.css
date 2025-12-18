@@ -1,0 +1,46 @@
+
+/*praveen */
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 25;
+  left: 0;
+  background-color: #222;
+  color: #fcf8f8;
+  padding: 20px;
+}
+
+.sidenav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav a:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #555;
+  padding: 10px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #777;
+}

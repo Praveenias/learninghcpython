@@ -1,0 +1,20 @@
+FastApi with uvicorn server
+
+________________________________
+
+python -m pip install fastapi uvicorn[standard]
+
+pip install python-multipart
+
+
+To run API:
+
+uvicorn main:app --reload (in Development Server)
+
+To check Swagger UI:
+
+api_path/docs
+ i.e 127.0.0.1:8000/docs
+
+
+
