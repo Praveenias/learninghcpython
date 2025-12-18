@@ -1,0 +1,25 @@
+{
+	"master":{
+		"manufacturer_name":{
+			"excel_column_name":"manufacturer_name"},
+		"manufacturer_partnumber":"manufacturer_part_number",
+		"manufacturer_part_description":"manufacturer_description",
+		"part_category":"part_category",
+		"component_type":"component_type",
+		"part_type":"part_type",
+		"part_lifecycle_status":"part_status",
+		"stock_details":"stock_position",
+		"lead_time":"supply_lead_time",
+		"component_classification":"component_classification",
+		"assembly_type":"assembly_type",
+		"power_type":"power_type",
+		"regulatory_test" : 0,
+		"year_to_eol":"year_to_eol",
+		"check_date_regulatory":"check_date_regulatory",
+		"check_date_life_cycle":"check_date_life_cycle" ,
+		"check_date_stock" :"check_date_stock",
+		"check_date_compliance" :"check_date_compliance",
+		"ltb_possibility" : 0,
+		"remarks":"remarks"
+	}
+}

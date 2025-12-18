@@ -1,0 +1,6 @@
+venv/
+superset-venv/
+sme/
+docs/
+__pycache__
+build/

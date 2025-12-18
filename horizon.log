@@ -1,0 +1,993 @@
+
+   INFO  Horizon started successfully.  
+
+
+   ErrorException 
+
+  Undefined array key "connection"
+
+  at /var/www/html/icom-v3/vendor/laravel/horizon/src/SupervisorOptions.php:359
+    355▕      * @return static
+    356▕      */
+    357▕     public static function fromArray(array $array)
+    358▕     {
+  ➜ 359▕         return tap(new static($array['name'], $array['connection']), function ($options) use ($array) {
+    360▕             foreach ($array as $key => $value) {
+    361▕                 $options->{$key} = $value;
+    362▕             }
+    363▕         });
+
+      [2m+24 vendor frames [22m
+
+  25  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   ErrorException 
+
+  Undefined array key "connection"
+
+  at /var/www/html/icom-v3/vendor/laravel/horizon/src/SupervisorOptions.php:359
+    355▕      * @return static
+    356▕      */
+    357▕     public static function fromArray(array $array)
+    358▕     {
+  ➜ 359▕         return tap(new static($array['name'], $array['connection']), function ($options) use ($array) {
+    360▕             foreach ($array as $key => $value) {
+    361▕                 $options->{$key} = $value;
+    362▕             }
+    363▕         });
+
+      [2m+24 vendor frames [22m
+
+  25  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   ErrorException 
+
+  Undefined array key "connection"
+
+  at /var/www/html/icom-v3/vendor/laravel/horizon/src/SupervisorOptions.php:359
+    355▕      * @return static
+    356▕      */
+    357▕     public static function fromArray(array $array)
+    358▕     {
+  ➜ 359▕         return tap(new static($array['name'], $array['connection']), function ($options) use ($array) {
+    360▕             foreach ($array as $key => $value) {
+    361▕                 $options->{$key} = $value;
+    362▕             }
+    363▕         });
+
+      [2m+24 vendor frames [22m
+
+  25  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   ErrorException 
+
+  Undefined array key "connection"
+
+  at /var/www/html/icom-v3/vendor/laravel/horizon/src/SupervisorOptions.php:359
+    355▕      * @return static
+    356▕      */
+    357▕     public static function fromArray(array $array)
+    358▕     {
+  ➜ 359▕         return tap(new static($array['name'], $array['connection']), function ($options) use ($array) {
+    360▕             foreach ($array as $key => $value) {
+    361▕                 $options->{$key} = $value;
+    362▕             }
+    363▕         });
+
+      [2m+24 vendor frames [22m
+
+  25  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   INFO  Horizon started successfully.  
+
+  2025-11-20 06:36:22 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 06:36:22 App\Jobs\ExcelImportJob .................. 251.94ms DONE
+  2025-11-20 06:39:46 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 06:39:48 App\Jobs\ExcelImportJob ........................ 1s DONE
+  2025-11-20 06:48:19 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 06:48:20 App\Jobs\ExcelImportJob .................. 950.95ms DONE
+
+   INFO  Horizon started successfully.  
+
+  2025-11-20 06:56:31 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 06:57:31 App\Jobs\ExcelImportJob ........................ 1m FAIL
+  2025-11-20 06:58:56 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:00:26 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:01:17 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:01:56 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:02:48 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:02:48 App\Jobs\ExcelImportJob ................... 33.73ms FAIL
+  2025-11-20 07:03:27 App\Jobs\ExcelImportJob ........................ RUNNING
+  2025-11-20 07:03:27 App\Jobs\ExcelImportJob ................... 14.31ms FAIL
+  2025-11-20 07:05:39 App\Jobs\ExcelImportJob .................... 6m 43s DONE
+  2025-11-20 07:07:42 App\Jobs\ExcelImportJob .................... 7m 16s DONE
+  2025-11-20 07:09:35 App\Jobs\ExcelImportJob .................... 8m 18s DONE
+  2025-11-20 07:09:47 App\Jobs\ExcelImportJob .................... 7m 51s DONE
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select * from `customers` where `customer_name` <> ILensys limit 1)
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Database/Connection.php:824
+    820▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    821▕                 );
+    822▕             }
+    823▕ 
+  ➜ 824▕             throw new QueryException(
+    825▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕             );
+    827▕         }
+    828▕     }
+
+      [2m+23 vendor frames [22m
+
+  24  /var/www/html/icom-v3/app/Models/Customer.php:1815
+      Illuminate\Database\Eloquent\Builder::first()
+
+  25  /var/www/html/icom-v3/app/Console/Kernel.php:231
+      App\Models\Customer::getNonPrimaryFirstCustomer()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select * from `customers` where `customer_name` <> ILensys limit 1)
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Database/Connection.php:824
+    820▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    821▕                 );
+    822▕             }
+    823▕ 
+  ➜ 824▕             throw new QueryException(
+    825▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕             );
+    827▕         }
+    828▕     }
+
+      [2m+23 vendor frames [22m
+
+  24  /var/www/html/icom-v3/app/Models/Customer.php:1815
+      Illuminate\Database\Eloquent\Builder::first()
+
+  25  /var/www/html/icom-v3/app/Console/Kernel.php:231
+      App\Models\Customer::getNonPrimaryFirstCustomer()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select * from `customers` where `customer_name` <> ILensys limit 1)
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Database/Connection.php:824
+    820▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    821▕                 );
+    822▕             }
+    823▕ 
+  ➜ 824▕             throw new QueryException(
+    825▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕             );
+    827▕         }
+    828▕     }
+
+      [2m+23 vendor frames [22m
+
+  24  /var/www/html/icom-v3/app/Models/Customer.php:1815
+      Illuminate\Database\Eloquent\Builder::first()
+
+  25  /var/www/html/icom-v3/app/Console/Kernel.php:231
+      App\Models\Customer::getNonPrimaryFirstCustomer()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select * from `customers` where `customer_name` <> ILensys limit 1)
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Database/Connection.php:824
+    820▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    821▕                 );
+    822▕             }
+    823▕ 
+  ➜ 824▕             throw new QueryException(
+    825▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826▕             );
+    827▕         }
+    828▕     }
+
+      [2m+23 vendor frames [22m
+
+  24  /var/www/html/icom-v3/app/Models/Customer.php:1815
+      Illuminate\Database\Eloquent\Builder::first()
+
+  25  /var/www/html/icom-v3/app/Console/Kernel.php:231
+      App\Models\Customer::getNonPrimaryFirstCustomer()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Class "Predis\Client" not found
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:36
+     32▕             $config['scheme'] = 'tls';
+     33▕             $config['host'] = Str::after($config['host'], 'tls://');
+     34▕         }
+     35▕ 
+  ➜  36▕         return new PredisConnection(new Client($config, $formattedOptions));
+     37▕     }
+     38▕ 
+     39▕     /**
+     40▕      * Create a new clustered Predis connection.
+
+      [2m+18 vendor frames [22m
+
+  19  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Call to undefined function Illuminate\Support\mb_split()
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Support/Str.php:1689
+    1685▕         if (isset(static::$studlyCache[$key])) {
+    1686▕             return static::$studlyCache[$key];
+    1687▕         }
+    1688▕ 
+  ➜ 1689▕         $words = mb_split('\s+', static::replace(['-', '_'], ' ', $value));
+    1690▕ 
+    1691▕         $studlyWords = array_map(fn ($word) => static::ucfirst($word), $words);
+    1692▕ 
+    1693▕         return static::$studlyCache[$key] = implode($studlyWords);
+
+      [2m+9 vendor frames [22m
+
+  10  [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1131}()
+      [2m+5 vendor frames [22m
+
+  16  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Call to undefined function Illuminate\Support\mb_split()
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Support/Str.php:1689
+    1685▕         if (isset(static::$studlyCache[$key])) {
+    1686▕             return static::$studlyCache[$key];
+    1687▕         }
+    1688▕ 
+  ➜ 1689▕         $words = mb_split('\s+', static::replace(['-', '_'], ' ', $value));
+    1690▕ 
+    1691▕         $studlyWords = array_map(fn ($word) => static::ucfirst($word), $words);
+    1692▕ 
+    1693▕         return static::$studlyCache[$key] = implode($studlyWords);
+
+      [2m+9 vendor frames [22m
+
+  10  [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1131}()
+      [2m+5 vendor frames [22m
+
+  16  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Call to undefined function Illuminate\Support\mb_split()
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Support/Str.php:1689
+    1685▕         if (isset(static::$studlyCache[$key])) {
+    1686▕             return static::$studlyCache[$key];
+    1687▕         }
+    1688▕ 
+  ➜ 1689▕         $words = mb_split('\s+', static::replace(['-', '_'], ' ', $value));
+    1690▕ 
+    1691▕         $studlyWords = array_map(fn ($word) => static::ucfirst($word), $words);
+    1692▕ 
+    1693▕         return static::$studlyCache[$key] = implode($studlyWords);
+
+      [2m+9 vendor frames [22m
+
+  10  [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1131}()
+      [2m+5 vendor frames [22m
+
+  16  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   Error 
+
+  Call to undefined function Illuminate\Support\mb_split()
+
+  at /var/www/html/icom-v3/vendor/laravel/framework/src/Illuminate/Support/Str.php:1689
+    1685▕         if (isset(static::$studlyCache[$key])) {
+    1686▕             return static::$studlyCache[$key];
+    1687▕         }
+    1688▕ 
+  ➜ 1689▕         $words = mb_split('\s+', static::replace(['-', '_'], ' ', $value));
+    1690▕ 
+    1691▕         $studlyWords = array_map(fn ($word) => static::ucfirst($word), $words);
+    1692▕ 
+    1693▕         return static::$studlyCache[$key] = implode($studlyWords);
+
+      [2m+9 vendor frames [22m
+
+  10  [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1131}()
+      [2m+5 vendor frames [22m
+
+  16  /var/www/html/icom-v3/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+   ERROR  Command "horizon" is not defined.  
+
+
+In HorizonServiceProvider.php line 9:
+                                                                       
+  Class "Laravel\Horizon\HorizonApplicationServiceProvider" not found  
+                                                                       
+
+
+In HorizonServiceProvider.php line 9:
+                                                                       
+  Class "Laravel\Horizon\HorizonApplicationServiceProvider" not found  
+                                                                       
+
+
+In HorizonServiceProvider.php line 9:
+                                                                       
+  Class "Laravel\Horizon\HorizonApplicationServiceProvider" not found  
+                                                                       
+
+
+In HorizonServiceProvider.php line 9:
+                                                                       
+  Class "Laravel\Horizon\HorizonApplicationServiceProvider" not found  
+                                                                       
+

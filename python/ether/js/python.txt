@@ -1,0 +1,33 @@
+backend scripting launguage
+
+python
+html
+css
+oops
+java script
+django
+
+
+easy to code
+open sorce
+vast packages
+write once run everywhere(cross - platform)
+integrity
+
+
+
+variable declartion
+a=10
+
+a b= 10
+
+
+datatypes
+inter(1-10)
+string("aknb")
+boolean(true or false
+float (1.2))
+
+
+a= input()
+print()

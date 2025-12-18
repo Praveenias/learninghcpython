@@ -1,0 +1,132 @@
+#oops
+object oriented programmning laungauage
+
+#organize and structuure code in object
+
+structural vs oops
+
+#class
+#object
+#constructor
+#classattributes
+#classmethods
+#abastraction
+#encapsulation
+#polymorphism
+#inheritance
+
+#class:
+
+A class is a blueprint or template for creating an object,it contains its own 
+behaviour and property
+
+keyword : class
+
+class Praveen:
+ pass
+
+#object:
+An object is an instance of a class
+there can be many object for an single class
+
+real world entity
+
+#constructor
+its special method
+it will be executed whenever we create an object
+it is used to initialize value to the object
+
+
+#classattributes
+this is a varaible that holds value within the class
+
+#classmethods
+methods are function that defined within a class
+
+
+#birds class ("name")
+methods:
+ sound_system
+ lifetime
+ colour
+ flying_speed
+ flying_height
+
+
+#Encapsulation
+
+Building Data and methods in a a single unit called as class
+
+it restrict access of the object component
+
+encapsulation can be acheived by public,private, protected(access specifiers)
+
+self.public_data = "abc"
+self._protected = "protected"
+self.__private = "private"
+
+
+#abastraction
+
+hiding the complex implementation details
+nd telling only the important features and workflow
+
+
+#inhertirtance
+#inheariting a child class from the parent class is called as inheritance
+#so that it can get all parent properties and behaviours 
+
+existing or parent or base
+
+new or derived or child
+
+
+class Common:
+ def eat():
+ print("both veg and non-veg)
+  pass
+
+class Animal(Common):
+ 
+
+
+
+#polymorphic
+
+many forms
+
+to write flexible code that can support based on implementation
+
+#method overiding and method overloading
+
+
+#method overriding
+
+Class Comman:
+ def common(self):
+ print("in common")
+
+class Base(Common):
+def common(self):
+ print("in base")
+
+ 
+
+
+method overloading
+
+class Common:
+ def add(self,a,b):
+  return a+b
+
+ def add(self,a,b,c=none):
+ if c==None:c=0
+  return a+b+c
+
+def Base(Common):
+  pass 
+
+
+#
+
+

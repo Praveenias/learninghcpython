@@ -1,0 +1,12 @@
+composer require filament/filament:"^3.0-stable" -W
+
+
+php artisan filament:install --panels
+
+php artisan make:filament-user
+
+use Filament\Models\Contracts\FilamentUser;
+implements FilamentUser
+
+
+php artisan make:filament-resource User

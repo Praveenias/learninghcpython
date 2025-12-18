@@ -1,0 +1,5 @@
+For windows:
+pyinstaller --add-data atom_templates.json;. praveen.py --onefile --name AtomHelper --icon=logo.png
+
+For Linux:
+pyinstaller --add-data atom_templates.json:. praveen.py --onefile --name AtomHelper

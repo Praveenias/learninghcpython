@@ -1,0 +1,20 @@
+{
+"level":{"mandatory":false},
+"part_revision":{"mandatory":false},
+"total_inventory ":{"mandatory":false},
+"critical_component":{"mandatory":false},
+"supplier_internal_partnumber":{"mandatory":false},
+"supplier_partnumber":{"mandatory":false},
+"supplier_manufacturer":{"mandatory":false},
+"supplier_lead_time":{"mandatory":false},
+"supplier_stock":{"mandatory":false},
+"supplier_monthly_usage":{"mandatory":false},
+"supplier_cover_months":{"mandatory":false},
+"supplier_cover_date":{"mandatory":false},
+"inventory_date":{"mandatory":false},
+"check_date_life_cycle":{"mandatory":false},
+"check_date_stock":{"mandatory":false},
+"ltb_possibility":{"mandatory":false},
+"opo":{"mandatory":false},
+"remark":{"mandatory":false}
+}

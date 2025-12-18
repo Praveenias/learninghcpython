@@ -1,0 +1,14 @@
+{
+  "data": {
+    "file_1": {
+      "file_name": "./input/custom_report.xlsx",
+      "sheet_name": "",
+      "column_name": ["Type of Risk","Risk"]
+    },
+    "file_2": {
+      "file_name": "./input/analysis.xlsx",
+      "sheet_name": "",
+      "column_name": ["Type of Risk","Risk"]
+    }
+  }
+}

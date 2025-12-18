@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Form Example</title>
+</head>
+<body>
+    <h2>Flask Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        
+        <!-- Select box -->
+        <label for="dropdown">Choose an option:</label>
+        <select name="dropdown" id="dropdown">
+            <option value="Option1">Option 1</option>
+            <option value="Option2">Option 2</option>
+            <option value="Option3">Option 3</option>
+        </select>
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>
+            <input type="checkbox" name="checkbox" value="yes">
+            I agree
+        </label>
+        <br><br>
+
+        <!-- File upload -->
+        <label for="file">Upload a file:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

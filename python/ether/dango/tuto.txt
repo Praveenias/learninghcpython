@@ -1,0 +1,10 @@
+python -m pip install Django
+
+django-admin startproject project_nmae
+
+python manage.py runserver
+
+8000
+
+
+python  manage.py startapp app_name

@@ -1,0 +1,6 @@
+#ordinary least squares
+
+sum(yi-yj)2 -> sum of all difference in line , so that it will be 
+minimized.
+
+yi-yj -> is the difference error.

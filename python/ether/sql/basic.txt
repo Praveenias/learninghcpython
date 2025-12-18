@@ -1,0 +1,22 @@
+# Database
+
+Managing and manipulating datas
+
+#sql
+
+Structured query launguage
+
+#rows and columns
+
+Name age email adress
+
+praveen 24  p@m.columns cbe
+
+
+
+
+{
+  name,age
+}{
+  name,email
+}

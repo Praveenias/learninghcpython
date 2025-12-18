@@ -1,0 +1,62 @@
+{
+	"db_config":{
+		"host": "localhost",
+		"port": "3307",
+		"username": "root",
+		"password": "Ilensys@123",
+		"database": "atom_obs_test"
+	},
+	"file":[
+		{
+			"file_type":"master",
+			"file_path":"Master_1.xlsx",
+			"header_row":2,
+			"column_names":["manufacturer_name","manufacturer_part_number","part_lifecycle_status"],
+			"columns_not_in_template":[]
+		}
+	],
+	"db_schema":{
+		"manufacturer":{
+			"table_name":"tbl_manufacturers",
+			"columns":{
+				"name":null,
+				"category": null,
+				"alert_mechanism": null, 
+				"normalized_name": null, 
+				"registration_name": "oemalerts@ilensys.com", 
+				"status": "approved", 
+				"type":"manufacturer"
+			},
+			"insert_query":"INSERT INTO tbl_manufacturers (name,category,alert_mechanism,normalized_name,registration_name,status,type) VALUES (%s,%s,%s,%s,%s,%s,%s)"
+		},
+		"master":{
+			"columns":{
+				"manufacturer_name" : null,
+				"manufacturer_partnumber" : null,
+				"manufacturer_description" : null,
+				"part_category" : null,
+				"component_type" : null,
+				"part_type" : null,
+				"part_status" : null,
+				"stock_position" : null,
+				"supply_lead_time" : null,
+				"price" : null,
+				"status" : "approved",
+				"component_classification" : null,
+				"assembly_type" : null,
+				"power_type" : null,
+				"regulatory_test" : 0,
+				"year_to_eol" : null,
+				"check_date_regulatory" : null,
+				"check_date_life_cycle" :null,
+				"check_date_stock" :null,
+				"check_date_compliance" :null,
+				"stock_details" : null,
+				"lead_time_details" : null,
+				"ltb_possibility" : 0,
+				"remarks" : null
+			},
+			"insert_query":"INSERT INTO tbl_component_master (manufacturer_name,manufacturer_partnumber,manufacturer_description,part_category,component_type,	part_type,part_status,stock_position,supply_lead_time,price,status,component_classification,assembly_type,power_type,regulatory_test,year_to_eol,check_date_regulatory,check_date_life_cycle,check_date_stock,check_date_compliance,stock_details,lead_time_details,ltb_possibility,remarks) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"
+		}
+	}
+}

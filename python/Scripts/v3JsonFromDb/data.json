@@ -1,0 +1,1133 @@
+{
+  "bom": {
+    "bom_details": {
+      "bom_number": "Bom1Risk",
+      "bom_name": "Bom1Risk",
+      "normalized_name": "Bom1Risk",
+      "revision": "1",
+      "bom_eau": null
+    },
+    "data": [
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110001",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110001",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110001",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110002",
+            "power_type": "Active",
+            "lifecycle_status": "EOL",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110002",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110002",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "EOL"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110003",
+            "power_type": "Active",
+            "lifecycle_status": "NRND",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110003",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110003",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed),NRND"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110004",
+            "power_type": "Active",
+            "lifecycle_status": "LTB",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Unconfirmed",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110004",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110004",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "LTB"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110005",
+            "power_type": "Active",
+            "lifecycle_status": "Unconfirmed",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110005",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110005",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "life_cycle (Unconfirmed),supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110006",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110006",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110006",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110007",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Compliant",
+            "exemption_date": "2022-01-01"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110007",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110007",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "ROHS3"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110008",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Compliant",
+            "exemption_date": "2027-01-01"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110008",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110008",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110009",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Non-compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110009",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110009",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "ROHS3"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110010",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Unconfirmed",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110010",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110010",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "rohs (Unconfirmed),supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110011",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": "2024-12-18"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110011",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110011",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110012",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Non-compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110012",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110012",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "LowRisk",
+          "risk_type": "supply_lead_time (Unconfirmed),REACH"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110013",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "1000",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Unconfirmed",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110013",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110013",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "MediumRisk",
+          "risk_type": "reach (Unconfirmed),Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110014",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "1000",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110014",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110014",
+          "quantity": "1.0",
+          "supplier_lead_time": "56.00",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "MediumRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110015",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "1000",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110015",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110015",
+          "quantity": "1.0",
+          "supplier_lead_time": "12.00",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "MediumRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110016",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110016",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110016",
+          "quantity": "1.0",
+          "supplier_lead_time": "12.00",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110017",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "0",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110017",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110017",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "2000"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110018",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "2000",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110018",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110018",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "0"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110019",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "0",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110019",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110019",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "0"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "1100201",
+            "power_type": "Active",
+            "lifecycle_status": "EOL",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Non-compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110020",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "1100201",
+          "quantity": "2.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "0"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100202",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110020",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100202",
+          "quantity": "2.0",
+          "supplier_lead_time": "12.00",
+          "supplier_stock": "0"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "HP",
+            "manufacturer_partnumber": "1100203",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Unconfirmed",
+            "exemption_date": "2027-01-01"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110020",
+          "manufacturer_name": "HP",
+          "manufacturer_partnumber": "1100203",
+          "quantity": "2.0",
+          "supplier_lead_time": "89.00",
+          "supplier_stock": "5000"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "110021",
+            "power_type": "Passive",
+            "lifecycle_status": "Active",
+            "stock_position": "6500",
+            "supply_lead_time": "96.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110021",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "110021",
+          "quantity": "5.0",
+          "supplier_lead_time": "89.00",
+          "supplier_stock": "2000"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100213",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "5000",
+            "supply_lead_time": "None",
+            "rohs3": "Non-compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110022",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100213",
+          "quantity": "1.0",
+          "supplier_lead_time": "25.00",
+          "supplier_stock": "500"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "ROHS3"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100214",
+            "power_type": "Active",
+            "lifecycle_status": "EOL",
+            "stock_position": "None",
+            "supply_lead_time": "12.0",
+            "rohs3": "Compliant",
+            "reach": "Non-compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110022",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100214",
+          "quantity": "1.0",
+          "supplier_lead_time": "25.00",
+          "supplier_stock": "500"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "ROHS3"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "HP",
+            "manufacturer_partnumber": "1100215",
+            "power_type": "Active",
+            "lifecycle_status": "LTB",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Compliant",
+            "exemption_date": "2022-01-30"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110022",
+          "manufacturer_name": "HP",
+          "manufacturer_partnumber": "1100215",
+          "quantity": "1.0",
+          "supplier_lead_time": "25.00",
+          "supplier_stock": "500"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "ROHS3"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100207",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "200",
+            "supply_lead_time": "15.0",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110023",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100207",
+          "quantity": "1.0",
+          "supplier_lead_time": "16.00",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "HP",
+            "manufacturer_partnumber": "1100208",
+            "power_type": "Active",
+            "lifecycle_status": "EOL",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110023",
+          "manufacturer_name": "HP",
+          "manufacturer_partnumber": "1100208",
+          "quantity": "1.0",
+          "supplier_lead_time": "89.00",
+          "supplier_stock": "100"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "1100209",
+            "power_type": "Active",
+            "lifecycle_status": "LTB",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110023",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "1100209",
+          "quantity": "1.0",
+          "supplier_lead_time": "100.00",
+          "supplier_stock": "100"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "Supply Lead Time"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100210",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "2000",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Compliant",
+            "exemption_date": "2027-01-01"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110024",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100210",
+          "quantity": "1.0",
+          "supplier_lead_time": "50.00",
+          "supplier_stock": "100"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "HP",
+            "manufacturer_partnumber": "1100211",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant-with-exemption",
+            "reach": "Compliant",
+            "exemption_date": "2027-01-01"
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110024",
+          "manufacturer_name": "HP",
+          "manufacturer_partnumber": "1100211",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "1100212",
+            "power_type": "Active",
+            "lifecycle_status": "Active",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110024",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "1100212",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "NoRisk",
+          "risk_type": "NA"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "APPLE",
+            "manufacturer_partnumber": "1100204",
+            "power_type": "Active",
+            "lifecycle_status": "Unconfirmed",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110025",
+          "manufacturer_name": "APPLE",
+          "manufacturer_partnumber": "1100204",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "life_cycle (Unconfirmed),supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "HP",
+            "manufacturer_partnumber": "1100205",
+            "power_type": "Active",
+            "lifecycle_status": "Unconfirmed",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110025",
+          "manufacturer_name": "HP",
+          "manufacturer_partnumber": "1100205",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "life_cycle (Unconfirmed),supply_lead_time (Unconfirmed)"
+        }
+      },
+      {
+        "mastercomponent": [
+          {
+            "company_id": null,
+            "manufacturer_description": "V3Json",
+            "part_category": "unconfirmed",
+            "component_type": "unconfirmed",
+            "part_type": "unconfirmed",
+            "manufacturer_name": "Intel",
+            "manufacturer_partnumber": "1100206",
+            "power_type": "Active",
+            "lifecycle_status": "Unconfirmed",
+            "stock_position": "None",
+            "supply_lead_time": "None",
+            "rohs3": "Non-compliant",
+            "reach": "Compliant",
+            "exemption_date": ""
+          }
+        ],
+        "bomcomponent": {
+          "customer_partnumber": "B110025",
+          "manufacturer_name": "Intel",
+          "manufacturer_partnumber": "1100206",
+          "quantity": "1.0",
+          "supplier_lead_time": "None",
+          "supplier_stock": "None"
+        },
+        "result": {
+          "risk_priority": "HiRisk",
+          "risk_type": "life_cycle (Unconfirmed),supply_lead_time (Unconfirmed)"
+        }
+      }
+    ]
+  }
+}

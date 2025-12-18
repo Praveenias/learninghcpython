@@ -1,0 +1,110 @@
+{
+  "MANDATORY + UNIQUE\n\nDescription\nThis field captures the Manufacturer's Name ( same as \"Company Name\").\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\nDiodes Incorporated\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Manufacturer Name"
+  },
+  "MANDATORY + UNIQUE\n\nDescription\nThis field captures the specific part number of the component. Combination of Manufacturer Name and Manufacturer Part Number has to be unique.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\nAP61300Z6-7\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Manufacturer Partnumber"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the description of the part \/ component.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\nIC REG BUCK ADJ 3A SOT563\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Manufacturer Part Description"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the part category details of the component.\n\nAllowed Values\n- Electrical & Electronics\n- Electro-Mechanical\n- Mechanical\n- Unconfirmed\n- PCB\n- PCBA\n\nDefault Values\nElectrical & Electronics\n\nExample\nElectrical & Electronics\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Part Category"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the details of the component types.\n\nAllowed Values\nFree text\n\nDefault Values\nUnconfirmed\n\nExample\nIC\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Component Type"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the details of the part type.\n\nAllowed Values\nFree text\n\nDefault Values\nUnconfirmed\n\nExample\nIC\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Part Type"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the assembly type information of the component. Applicable only to Electronics components. \n\nAllowed Values\n- THT\n- SMT\n- Unconfirmed\n- Not Applicable\n\nDefault Values\nUnconfirmed\n\nExample\nTHT\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max\n": {
+    "0": "Assembly Type"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the power type details of the component. Applicable to Electronics components. \n\nAllowed Values\n- Active\n- Passive\n- Not Applicable\n- Unconfirmed\n\nDefault Values\n- Not Applicable\n\nExample\nActive\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max\n": {
+    "0": "Power Type"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the part lifecycle status of the component.\n\nAllowed Values\n- Active\n- EOL\n- NRND\n- LTB\n- Not Applicable\n- Unconfirmed\n- Not Available\n- Discontinued\n- No Data\n\nDefault Values\nUnconfirmed \/ No Data\n\nExample\nEOL\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Part Lifecycle Status"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the over all market stock position.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\n122\n\nField Type\nDouble \n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Stock Details"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the time ( weeks) it takes to process the order.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\n12\n\nField Type\nDouble\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Lead Time"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the price details of the component.\n\nAllowed Values\nNumber with decimals\n\nDefault Values\nReal time text\n\nExample\n5.03\n\nField Type\nDouble\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Price"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the price value collected from the specified distributors. Do not use Rs, $ , Euro or other currency symbols. \n\nAllowed Values\nNumber with decimals\n\nDefault Values\nNull\n\nExample\n5.07\n\nField Type\nDouble\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max\n": {
+    "0": "Web Cost"
+  },
+  "MANDATORY\n\nDescription\nThis field captures the component classification details.\n\nAllowed Values\n- Manufactured\n- Purchased\n- Standard\n- Unconfirmed\n\nDefault Values\nPurchased\n\nExample\nPurchased\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Component Classification"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the mass of the component.\n\nAllowed Values\nNumber with decimals\n\nDefault Values\nReal time \n\nExample\n0.32\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Part Mass"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the unit of measure.\n\nAllowed Values\n- ug\n- mg\n- g\n- kg\n- Unconfirmed\n\nDefault Values\n- Unconfirmed\n\nExample\nmg\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Part UOM"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the \"Units of Measure\" for the respective Manufacturer Part Number (MPN) sourced from a web \/ online platform.\n\nAllowed Values\nEach\n\nDefault Values\nEach\n\nExample\nEach\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Web Cost Units of Measure"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the \"Currency Type\" for the respective Manufacturer Part Number (MPN) sourced from a web \/ online platform.\n\nAllowed Values\nUSD\n\nDefault Values\nUSD\n\nExample\nUSD\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Web Cost Currency Type"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the minimum order quantity  for the respective Manufacturer Part Number (MPN) sourced from a web \/ online platform.\n\nAllowed Values\nFree text\n\nDefault Values\nNumber with decimals\n\nExample\n10\n\nField Type\nInteger\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Web Cost Minimum Order Quantity"
+  },
+  "OPTIONAL \n\nDescription\nThis field is intended to document the name of the distributor from the predefined list.\n\nAllowed Values\n- Avnet\n- Arrow\n- Digi Key\n- Mouser\n- Newark - USA\nManufacturer & No Standard Distributor\n\nDefault Values\nReal time text\n\nExample\nArrow\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Web Cost Source"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the date on which Price value collected from the specified distributors.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n14-Aug-2014\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Web Cost Check Date "
+  },
+  "OPTIONAL \n\nDescription\nThis field captures the End Of Life details of a component.\n\nAllowed Values\nWhole number\n\nDefault Values\nReal time text\n\nExample\n25\n\nField Type\nDouble\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Years to EOL"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Obsolescence specific RoHS3 regulation details.\n\nAllowed Values\n- Compliant\n- Compliant with Exemption\n- Non Compliant\n- Unconfirmed\n\nDefault Values\nUnconfirmed\n\nExample\nCompliant\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max\n\n": {
+    "0": "o_RoHS3"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Obsolescence specific additional RoHS3 regulation details.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\nExemption details eg. 7c1\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "o_RoHS3 Comment"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Obsolescence specific RoHS3 exemption date details.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n24-Jun-2016\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "o_RoHS3 Exemption Date"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Obsolescence specific REACH regulation details.\n\nAllowed Values\n- Compliant\n- Non Compliant\n- Unconfirmed\n\nDefault Values\nUnconfirmed\n\nExample\nCompliant\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max\n\n": {
+    "0": "o_REACH"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the  date when the life cycle status check of the component in question was performed.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n25-Apr-2019\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Lifecycle Check Date "
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the  date when the stock check of the component in question was performed.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n06-May-2020\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Stock Check Date "
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the  date when the compliance check of the component in question was performed.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n08-Apr-2014\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": " Compliance Check Date"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the End-Of-Life Date.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n03-Mar-2031\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "EOL Date"
+  },
+  "OPTIONAL \n\nDescription\nThis field captures the Last Time Buy Date.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n05-Feb-2021\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "LTB Date"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Last Time Delivery \/ shipment Date.\n\nAllowed Values\ndd-mmm-yyyy\n\nDefault Values\nReal time text\n\nExample\n05-Jan-2024\n\nField Type\nDate\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "LTD Date"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Export Control Classification Number (ECCN) is a five-character alphanumeric code used to identify dual-use items for export control purposes.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\n3A090\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "ECCN"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the Country of Origin (COO),  is the country where a product is made, produced, or grown.\n\nAllowed Values\nFree text\n\nDefault Values\nReal time text\n\nExample\nUSA\n\nField Type\nString\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Country of Origin"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures the whether the part can be civilian or military sector.\n\nAllowed Values\n- Yes\n- No\n\nDefault Values\nReal time text\n\nExample\nYes\n\nField Type\nBoolean\n\nField length details\nDatabase - 255\nUI - 255 Characters max\nTemplate - 255 Characters max": {
+    "0": "Dual Use Part"
+  },
+  "OPTIONAL\n\nDescription\nThis field captures tany additonal information about the master component\n\nAllowed Values\nFree text\n\nDefault Values\nNo\n\nExample\nCheck COO with manufacturer\n\nField Type\nString\n\nField length details\nDatabase - JSON\nUI - 500 Characters max\nTemplate - 500 Characters max": {
+    "0": "Comments"
+  }
+}
